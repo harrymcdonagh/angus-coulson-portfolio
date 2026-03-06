@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Angus Coulson — Journalism Portfolio
 
-## Getting Started
+Professional portfolio website for Angus Coulson, MA Broadcast & Digital Journalism student at the University of East Anglia.
 
-First, run the development server:
+Built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**.
+
+---
+
+## Getting Started (Local Development)
 
 ```bash
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment (Vercel)
 
-## Learn More
+This site is designed for one-click deployment on Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Push this repo to GitHub** (if not already connected)
+2. Go to [vercel.com](https://vercel.com) and sign in
+3. Click **"Add New Project"** and import this GitHub repository
+4. Vercel will auto-detect Next.js — click **Deploy**
+5. Your site will be live at a `.vercel.app` URL within minutes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+No environment variables are needed — the site is fully static.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Customising Content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Images:** Replace the placeholder files in `/public/images/` (see `PLACEHOLDER_NOTES.md` for sizes)
+- **Articles & text:** Edit the data arrays and copy in `app/page.tsx`
+- **Metadata & SEO:** Update `app/layout.tsx`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `PLACEHOLDER_NOTES.md` for a full list of placeholder content to replace.
