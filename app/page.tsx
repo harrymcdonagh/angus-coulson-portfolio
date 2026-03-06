@@ -31,8 +31,7 @@ const publishedWork = [
     outlet: "The Spurs Web",
     color: "#132257",
     date: null,
-    title:
-      "10 players Tottenham should move on to raise \u00a3120m summer war chest",
+    title: "10 players Tottenham should move on to raise \u00a3120m summer war chest",
     url: "https://www.spurs-web.com/spurs-news/10-players-tottenham-should-look-to-move-on-to-raise-120m-this-summer/",
     description:
       "An analytical look at the Spurs players who could be moved on to fund a major summer rebuild.",
@@ -41,8 +40,7 @@ const publishedWork = [
     outlet: "The Spurs Web",
     color: "#132257",
     date: null,
-    title:
-      "Cristian Romero out, Luka Vuskovic in? Why Tottenham need a defensive change",
+    title: "Cristian Romero out, Luka Vuskovic in? Why Tottenham need a defensive change",
     url: "https://www.spurs-web.com/tottenham-hotspur-fan-articles/cristian-romero-out-luka-vuskovic-in-why-tottenham-need-a-defensive-change/",
     description:
       "Making the case for a generational defensive shift at Spurs, weighing up the evidence for and against.",
@@ -180,39 +178,27 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
             {/* Image column */}
             <div className="lg:col-span-4 flex flex-col gap-6">
-              {/* REPLACE: /public/images/profile.jpg — Recommended: 600x600 square headshot */}
+              {/* REPLACE: /public/images/profile.jpeg— Recommended: 600x600 square headshot */}
               <div className="relative aspect-[3/4] overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-[3px] bg-accent z-10" />
                 <Image
                   src="/images/profile.jpg"
-                  alt="Angus Coulson — profile photo"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-                {/* Placeholder overlay — remove once real photo is added */}
-                <div className="absolute inset-0 bg-[#181614] flex items-center justify-center text-center p-6">
-                  <span className="text-xs text-muted tracking-wide">
-                    [Profile Photo — replace with profile.jpg]
-                  </span>
-                </div>
-              </div>
-
-              {/* REPLACE: /public/images/at-work.jpg — Recommended: 800x600 landscape, action shot */}
-              <div className="relative aspect-[16/10] overflow-hidden">
-                <Image
-                  src="/images/at-work.jpg"
                   alt="Angus Coulson at work"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 33vw"
                 />
-                {/* Placeholder overlay — remove once real photo is added */}
-                <div className="absolute inset-0 bg-[#1a1816] flex items-center justify-center text-center p-6">
-                  <span className="text-xs text-muted tracking-wide">
-                    [At Work Photo — replace with at-work.jpg]
-                  </span>
-                </div>
+              </div>
+
+              {/* REPLACE: /public/images/at-work.jpg — Recommended: 800x600 landscape, action shot */}
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <Image
+                  src="/images/at-work.jpeg"
+                  alt="Angus Coulson at work"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                />
               </div>
             </div>
 
@@ -229,30 +215,25 @@ export default function Home() {
 
               <div className="red-rule space-y-5 text-[1.05rem] text-cream/70 leading-[1.75]">
                 <p>
-                  Angus Coulson is a postgraduate journalism student at the
-                  University of East Anglia, where he is completing an MA in
-                  Broadcast &amp; Digital Journalism. With published bylines for{" "}
-                  <strong className="text-cream font-semibold">
-                    Daily Mail Sport
-                  </strong>{" "}
-                  and{" "}
-                  <strong className="text-cream font-semibold">
-                    The Spurs Web
-                  </strong>
-                  , he has already established a track record of producing
-                  compelling digital content for national and specialist outlets.
+                  Angus Coulson is a postgraduate journalism student at the University of
+                  East Anglia, where he is completing an MA in Broadcast &amp; Digital
+                  Journalism. With published bylines for{" "}
+                  <strong className="text-cream font-semibold">Daily Mail Sport</strong>{" "}
+                  and <strong className="text-cream font-semibold">The Spurs Web</strong>,
+                  he has already established a track record of producing compelling
+                  digital content for national and specialist outlets.
                 </p>
                 <p>
                   His work spans long-form features, data-driven analysis, and
-                  investigative reporting &mdash; with a particular focus on
-                  football and the business of sport. Equally at home behind a
-                  microphone or a keyboard, Angus brings broadcast confidence and
-                  editorial rigour to every story he tells.
+                  investigative reporting &mdash; with a particular focus on football and
+                  the business of sport. Equally at home behind a microphone or a
+                  keyboard, Angus brings broadcast confidence and editorial rigour to
+                  every story he tells.
                 </p>
                 <p>
-                  He is actively seeking opportunities in broadcast and digital
-                  sports journalism, and is available for freelance commissions,
-                  newsroom placements, and full-time roles.
+                  He is actively seeking opportunities in broadcast and digital sports
+                  journalism, and is available for freelance commissions, newsroom
+                  placements, and full-time roles.
                 </p>
               </div>
             </div>
@@ -282,8 +263,8 @@ export default function Home() {
             Selected articles
           </h2>
           <p className="text-sm text-muted-light mb-14 max-w-md">
-            Published features and analysis for national outlets and specialist
-            sports media.
+            Published features and analysis for national outlets and specialist sports
+            media.
           </p>
 
           {/* Thick top rule like a broadsheet section */}
@@ -368,8 +349,7 @@ export default function Home() {
             Student journalism &amp; broadcast
           </h2>
           <p className="text-sm text-muted-light mb-14 max-w-md">
-            Investigative reporting and broadcast work produced during
-            postgraduate study.
+            Investigative reporting and broadcast work produced during postgraduate study.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t-[3px] border-cream">
@@ -386,7 +366,10 @@ export default function Home() {
                 <div className="flex flex-wrap items-center gap-3 mb-4">
                   <span
                     className="text-[0.6rem] font-bold uppercase tracking-[0.2em] px-2.5 py-1"
-                    style={{ backgroundColor: article.color, color: article.badge ? "#000" : "#fff" }}
+                    style={{
+                      backgroundColor: article.color,
+                      color: article.badge ? "#000" : "#fff",
+                    }}
                   >
                     {article.outlet}
                   </span>
@@ -445,9 +428,9 @@ export default function Home() {
                 together.
               </h2>
               <p className="text-[1.05rem] text-cream/60 leading-relaxed max-w-md">
-                Whether you&apos;re an editor with a commission, a newsroom with
-                an opening, or a collaborator with a story to tell &mdash;
-                I&apos;d love to hear from you.
+                Whether you&apos;re an editor with a commission, a newsroom with an
+                opening, or a collaborator with a story to tell &mdash; I&apos;d love to
+                hear from you.
               </p>
             </div>
 
@@ -457,7 +440,10 @@ export default function Home() {
                 className="group flex items-center gap-5 py-6 border-t border-b border-border hover:border-accent transition-colors duration-300"
               >
                 <div className="w-12 h-12 rounded-full border border-border-light group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center transition-all duration-300">
-                  <Mail size={18} className="text-muted-light group-hover:text-accent transition-colors duration-300" />
+                  <Mail
+                    size={18}
+                    className="text-muted-light group-hover:text-accent transition-colors duration-300"
+                  />
                 </div>
                 <div>
                   <p className="text-[0.6rem] uppercase tracking-[0.2em] text-muted mb-1">
@@ -467,7 +453,10 @@ export default function Home() {
                     anguscoulson1@gmail.com
                   </p>
                 </div>
-                <ArrowRight size={16} className="ml-auto text-border-light group-hover:text-accent group-hover:translate-x-1 transition-all duration-300" />
+                <ArrowRight
+                  size={16}
+                  className="ml-auto text-border-light group-hover:text-accent group-hover:translate-x-1 transition-all duration-300"
+                />
               </a>
 
               <a
@@ -477,7 +466,10 @@ export default function Home() {
                 className="group flex items-center gap-5 py-6 border-b border-border hover:border-accent transition-colors duration-300"
               >
                 <div className="w-12 h-12 rounded-full border border-border-light group-hover:border-accent group-hover:bg-accent/10 flex items-center justify-center transition-all duration-300">
-                  <Linkedin size={18} className="text-muted-light group-hover:text-accent transition-colors duration-300" />
+                  <Linkedin
+                    size={18}
+                    className="text-muted-light group-hover:text-accent transition-colors duration-300"
+                  />
                 </div>
                 <div>
                   <p className="text-[0.6rem] uppercase tracking-[0.2em] text-muted mb-1">
@@ -487,7 +479,10 @@ export default function Home() {
                     Angus Coulson
                   </p>
                 </div>
-                <ArrowRight size={16} className="ml-auto text-border-light group-hover:text-accent group-hover:translate-x-1 transition-all duration-300" />
+                <ArrowRight
+                  size={16}
+                  className="ml-auto text-border-light group-hover:text-accent group-hover:translate-x-1 transition-all duration-300"
+                />
               </a>
             </div>
           </div>
