@@ -68,13 +68,13 @@ const additionalWork = [
     badge: null,
   },
   {
-    outlet: "Broadcast",
+    outlet: "UEA Journalism News",
     color: "#d4a017",
     title: "Norwich vs West Brom \u2014 Post-match report",
     url: "https://drive.google.com/file/d/13r5UlO0TyXW40mWOs1CiBmZvmfobsWsg/view?usp=drive_link",
     description:
       "A broadcast-style post-match report from Norwich City vs West Brom, demonstrating on-the-ground reporting and delivery skills.",
-    badge: "Broadcast",
+    badge: null,
   },
 ];
 
